@@ -1,0 +1,220 @@
+/*----------------------------------------*/
+/* Template default CSS
+/*----------------------------------------*/
+
+html,
+body {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+p {
+	font-size: 16px;
+	color: black;
+	line-height: 1.8;
+}
+
+/*---------------------
+  Commom elements
+-----------------------*/
+
+/* Preloder */
+
+#preloder {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background: #000;
+}
+
+.loader {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -13px;
+	margin-left: -13px;
+	border-radius: 60px;
+	animation: loader 0.8s linear infinite;
+	-webkit-animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+		border: 4px solid #673ab7;
+		border-left-color: transparent;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+}
+
+@-webkit-keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		border: 4px solid #673ab7;
+		border-left-color: transparent;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+}
+
+.main-warp {
+	height: 100%;
+}
+
+/*------------------
+  Header section
+---------------------*/
+
+.page-section {
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.home-page {
+	height: 100%;
+	position: relative;
+	z-index: 10000;
+}
+
+
+/* Circle progress */
+
+.circle-progress {
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.circle-progress canvas {
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.circle-progress .progress-info {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	margin-top: -35px;
+}
+
+.circle-progress .progress-info h2 {
+	font-size: 48px;
+	line-height: 1;
+}
+
+.circle-progress .progress-info p {
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+
+/* Typography */
+
+#title{
+	color: #FF4136;
+	font-size: 25px;
+}
+
+#title-page{
+	color: black;
+	font-size: 35px;
+}
+
+
+/* Positioning */
+
+.item {
+  width: 100%;
+  height: 80%;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bottom-section{
+	background-color: black;
+	height:13%;
+	width: 100%;
+
+}
+
+.hidden{
+	display: none;
+}
+
+.file-field.medium .file-path-wrapper {
+height: 3rem; }
+.file-field.medium .file-path-wrapper .file-path {
+height: 2.8rem; }
+
+.file-field.big-2 .file-path-wrapper {
+height: 3.7rem; }
+.file-field.big-2 .file-path-wrapper .file-path {
+height: 3.5rem; }
+
+#image-result{
+	margin-top: 0px;
+	width: 100%;
+	height: 465px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#download,#retry{
+	margin-top: 15px;
+}
+
+/* ----------------
+  Responsive
+---------------------*/
+  @media only screen and (max-width: 1320px){
+    .bottom-section{
+      margin-top: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 935px){
+    .bottom-section{
+      margin-top: 60px;
+    }
+  }
+
+  @media only screen and (max-width: 767px){
+    .bottom-section{
+      margin-top: 0px;
+    }
+  }
+
+ 
