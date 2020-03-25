@@ -20,3 +20,6 @@
 
   -To create a website that can run the app.py file, some people suggested to me the use of flask but if you can do this in php will be great too.
 
+### Running example
+
+  -You can copy the files from the "example" folder to a local folder on you pc, and the run the script python, that will generate a wordCloud inside your folder. If you want to try with your own whatsapp talk, change the values of "Name1" and "Name2" in the python scripts, add stopwords of your language in the "stopwords_example" file and replace the "talk_example" with your talk.
